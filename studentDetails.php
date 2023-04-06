@@ -4,6 +4,21 @@
 	<title>Student Details Form</title>
 	<script src="js/validation.js"></script>
 </head>
+	<?php
+session_start();
+
+// Check if user is logged in
+if(!isset($_SESSION['email'])){
+	header("Location: login.php");
+	exit();
+}
+
+// If user is logged in, retrieve email from session
+$email = $_SESSION['email'];
+
+// Your remaining code for displaying student details goes here...
+?>
+
 <body>
 	<h1>Student Details Form</h1>
 	<form method="post" action="submit.php" onsubmit="return validateForm()">
