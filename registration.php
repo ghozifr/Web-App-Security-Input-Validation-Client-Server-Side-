@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Registration Form</title>
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
 </head>
 <body>
 	<h2>Registration Form</h2>

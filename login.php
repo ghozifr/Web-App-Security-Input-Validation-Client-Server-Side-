@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Login Page</title>
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
 </head>
 <body>
 	<h2>Login Page</h2>
